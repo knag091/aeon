@@ -1,0 +1,305 @@
+/* reset.css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*fonts.css*/
+@font-face {
+  font-family: "BookkMyungjo_Bold"; /*font 이름*/
+  font-style: "normal"; /* font 스타일 정의 (기울임, 일반) */
+  font-weight: 400; /* font 굵기 정의 */
+  /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
+  src: url("./font/BookkMyungjo_Bold.ttf"); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "BookkMyungjo_Light"; /*font 이름*/
+  font-style: "normal"; /* font 스타일 정의 (기울임, 일반) */
+  font-weight: 400; /* font 굵기 정의 */
+  /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
+  src: url("./font/BookkMyungjo_Light.ttf"); /* IE9 Compat Modes */
+}
+
+/* -------------------------------------- */
+
+.container {
+  background-color: hsl(105, 100%, 98%);
+  /* #32723d */
+
+  width: 375px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .sub-title {
+  color: #191919;
+  margin-top: 60px;
+  font-size: 18px;
+
+  font-family: "BookkMyungjo_Light";
+  color: #191919;
+}
+.container img.logo-img {
+  width: 100px;
+  margin-top: 20px;
+}
+.container .title {
+  font-family: "BookkMyungjo_Bold";
+  color: #191919;
+
+  font-size: 23px;
+  margin-top: 20px;
+}
+.container .ogle {
+  font-family: "BookkMyungjo_Light";
+  color: #191919;
+
+  font-size: 16px;
+  margin-top: 9px;
+}
+.container .poster {
+  width: 83%;
+  margin-top: 40px;
+}
+.container .poster img {
+  width: 100%;
+  margin-bottom: 35px;
+  border: 2px solid rgb(147, 156, 149);
+}
+.container hr {
+  width: 85%;
+  margin-bottom: 50px;
+
+  background: #c4cbf5;
+  height: 1px;
+  border: 0;
+}
+
+/* 캘린더 */
+.container-white {
+  background-color: white;
+}
+
+#calendar {
+  background-color: white;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.calendar-wrap {
+  width: 320px;
+  margin: auto;
+  font-size: 4vw;
+  user-select: none;
+}
+.month-year {
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 60px;
+}
+.calendar {
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 0.75em;
+  overflow: hidden;
+  border-collapse: collapse;
+  -webkit-tap-highlight-color: transparent;
+}
+.day-title {
+  font-weight: bold;
+  font-size: 12px;
+}
+.day:first-child,
+.day:last-child {
+  color: rgba(0, 0, 0, 0.5);
+}
+.day-number {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  border-radius: 50%;
+
+  font-size: 15px;
+}
+.day.today span.day-number {
+  color: #fff;
+  border: 0.5em solid transparent;
+  box-shadow: inset 0 0 0 2em #37474f;
+}
+
+/* --------------------------------- */
+.d-day .day {
+  font-size: 20px;
+
+  font-family: "BookkMyungjo_Light";
+  color: #191919;
+
+  text-align: center;
+  margin-top: 20px;
+}
+.d-day #DDay {
+  font-size: 16px;
+
+  font-family: "BookkMyungjo_Light";
+  color: #191919;
+
+  margin-top: 13px;
+  margin-bottom: 60px;
+
+  text-align: center;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.map .title {
+  margin-top: 50px;
+}
+.map .address {
+  font-family: "BookkMyungjo_Light";
+  color: #191919;
+
+  font-size: 16px;
+  margin-top: 9px;
+  margin-bottom: 13px;
+} 
+.map .cont {
+  display: none;
+}
