@@ -15,3 +15,23 @@ function find_day() {
 }
 find_day();
 setInterval(find_day, 1000); //초마다 디데이 기능 실행
+
+// ------------------------------------
+const myTextarea = document.querySelector(".container-member .pay .account");
+
+// button 클릭 이벤트
+myTextarea.onclick = () => {
+  // // textarea의 내용을 복사한다.
+  // window.navigator.clipboard.writeText(myTextarea.value).then(() => {
+  //   // 복사가 완료되면 호출된다.
+  //   alert("복사완료");
+  // });
+  
+  const text = "1001-8451-8498";
+  
+  navigator.clipboard.writeText(text).then(() => {
+    alert(`계좌번호 복사가 완료되었습니다.`);
+  }).catch(err => {
+    alert('복사 실패: ' + err);
+  });
+};

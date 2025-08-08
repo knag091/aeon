@@ -299,7 +299,51 @@ table {
   font-size: 16px;
   margin-top: 9px;
   margin-bottom: 13px;
-} 
+}
 .map .cont {
   display: none;
+}
+
+.container-member {
+  background-color: white;
+  margin-bottom: 50px;
+}
+.container-member .title {
+  margin-top: 50px;
+  margin-bottom: 2px;
+}
+.container-member .member {
+  font-family: "BookkMyungjo_Light";
+  color: #191919;
+
+  font-size: 16px;
+  margin-top: 9px;
+}
+
+.container-member .pay {
+  margin-top: 60px;
+}
+.container-member .pay .title {
+  font-family: "BookkMyungjo_Bold";
+  color: #191919;
+
+  font-size: 20px;
+  margin-top: 9px;
+
+  text-align: center;
+}
+.container-member .pay .account {
+  font-family: "BookkMyungjo_light";
+  color: #191919;
+
+  font-size: 16px;
+  margin-top: 13px;
+
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 100px;
+
+  text-align: center;
+
+  cursor: pointer;
 }
