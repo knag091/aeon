@@ -347,3 +347,47 @@ table {
 
   cursor: pointer;
 }
+
+.setList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+.setList .title {
+  margin-top: 50px;
+  font-size: 30px;
+}
+.setList .list {
+  margin-top: 30px;
+}
+.setList .list .cont {
+  text-align: center;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.setList .list .cont .s-title {
+  font-size: 18px;
+}
+.setList .list .cont .s-who {
+  margin-left: 10px;
+  font-size: 15px;
+  color: #464444;
+}
+.setList .list .cont .s-who::before {
+  content: " - ";
+}
+.setList .sub-cont .title {
+  font-size: 20px;
+  text-align: center;
+}
+.setList .sub-cont .sub-title {
+  font-size: 17px;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}

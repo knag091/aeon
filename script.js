@@ -27,7 +27,7 @@ myTextarea.onclick = () => {
   //   alert("복사완료");
   // });
   
-  const text = "1001-8451-8498";
+  const text = "토스뱅크 1001-8451-8498";
   
   navigator.clipboard.writeText(text).then(() => {
     alert(`계좌번호 복사가 완료되었습니다.`);
